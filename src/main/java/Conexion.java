@@ -21,7 +21,7 @@ public class Conexion {
         try {
             if(_conexion == null){
                 Class.forName("org.sqlite.JDBC");
-                _conexion = DriverManager.getConnection("jdbc:sqlite:musicadb.db");
+                _conexion = DriverManager.getConnection("jdbc:sqlite:CursoDB.db");
                 return _conexion;
             } else {
                 return _conexion;
